@@ -1,12 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: "/vite-ci-cd/", // Change this to match your repo name
   plugins: [react()],
-  base: "/vite-ci-cd/",
-  server: {
-    open: true,
-    port: 3000,
-  },
 });
